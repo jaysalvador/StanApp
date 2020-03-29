@@ -21,6 +21,7 @@ public struct Movie: Codable {
     public var programType: MovieType?
     public var images: [Image]?
     public var releaseYear: Int?
+    public var id: String?
 
     enum CodingKeys: String, CodingKey {
         
@@ -29,6 +30,7 @@ public struct Movie: Codable {
         case programType
         case images
         case releaseYear
+        case id
     }
     
     /// Handles custom dynamic keys
@@ -70,6 +72,8 @@ public struct Movie: Codable {
                 self.images?.append(image)
             }
         }
+        
+        self.id = UUID().uuidString
     }
 }
 

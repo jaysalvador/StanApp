@@ -8,6 +8,7 @@
 
 import UIKit
 import StanLib
+import Hero
 
 enum MoviesSection: Equatable {
     
@@ -152,6 +153,8 @@ class MoviesViewController: JCollectionViewController<MoviesSection, MoviesItem>
         self.setupDirection()
         
         self.viewModel?.getMovies()
+        
+        self.isHeroEnabled = true
     }
     
     // MARK: - UICollectionViewDataSource & UICollectionViewDelegate
@@ -171,6 +174,13 @@ class MoviesViewController: JCollectionViewController<MoviesSection, MoviesItem>
     /// handles currency selection to show in `CurrencyDetailViewController`
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAtSection section: MoviesSection, item: MoviesItem) {
 
+        if case .item(let movie) = item,
+            let vc = MovieDetailsViewController.make(withViewModel: MovieDetailsViewModel(movie: movie)) {
+            
+            vc.modalPresentationStyle = .fullScreen
+            
+            self.present(vc, animated: true, completion: nil)
+        }
     }
     
     // MARK: - UICollectionViewDelegateFlowLayout

@@ -15,6 +15,8 @@
 		B543AEF1242B1DE50099F2CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B543AEEF242B1DE50099F2CF /* LaunchScreen.storyboard */; };
 		B543AEFC242B1DE60099F2CF /* StanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543AEFB242B1DE60099F2CF /* StanTests.swift */; };
 		B543AF07242B1DE60099F2CF /* StanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543AF06242B1DE60099F2CF /* StanUITests.swift */; };
+		B55CA8222430795200389837 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55CA8212430795200389837 /* MovieDetailsViewController.swift */; };
+		B55CA8242430796800389837 /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55CA8232430796800389837 /* MovieDetailsViewModel.swift */; };
 		B5C2F5A524303ACA00CBDAFB /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5A424303ACA00CBDAFB /* HttpClient.swift */; };
 		B5C2F5A724303ADA00CBDAFB /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5A624303ADA00CBDAFB /* HttpError.swift */; };
 		B5C2F5AA24303B1B00CBDAFB /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5A924303B1B00CBDAFB /* DispatchQueue.swift */; };
@@ -94,6 +96,8 @@
 		B543AF02242B1DE60099F2CF /* StanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B543AF06242B1DE60099F2CF /* StanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanUITests.swift; sourceTree = "<group>"; };
 		B543AF08242B1DE60099F2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B55CA8212430795200389837 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		B55CA8232430796800389837 /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
 		B5C2F59C24303AB500CBDAFB /* libStanLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStanLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C2F5A424303ACA00CBDAFB /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		B5C2F5A624303ADA00CBDAFB /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
@@ -312,6 +316,8 @@
 			children = (
 				B5C2F5DB24305DA600CBDAFB /* MoviesViewController.swift */,
 				B5C2F5DD24305E7200CBDAFB /* MoviesViewModel.swift */,
+				B55CA8212430795200389837 /* MovieDetailsViewController.swift */,
+				B55CA8232430796800389837 /* MovieDetailsViewModel.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -597,8 +603,10 @@
 				B5C2F5D924305D3A00CBDAFB /* UIImageView.swift in Sources */,
 				B5C2F5DE24305E7200CBDAFB /* MoviesViewModel.swift in Sources */,
 				B5C2F5D22430569600CBDAFB /* MovieCell.swift in Sources */,
+				B55CA8222430795200389837 /* MovieDetailsViewController.swift in Sources */,
 				B5C2F5BD243055E100CBDAFB /* AbstractDiffCalculator.swift in Sources */,
 				B5C2F5C12430561500CBDAFB /* UIView.swift in Sources */,
+				B55CA8242430796800389837 /* MovieDetailsViewModel.swift in Sources */,
 				B543AEE5242B1DE40099F2CF /* AppDelegate.swift in Sources */,
 				B543AEE7242B1DE40099F2CF /* SceneDelegate.swift in Sources */,
 				B5C2F5BA243055C000CBDAFB /* JCollectionViewController.swift in Sources */,

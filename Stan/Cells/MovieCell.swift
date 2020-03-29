@@ -8,9 +8,13 @@
 
 import UIKit
 import StanLib
+import Hero
 
 class MovieCell: UICollectionViewCell {
-
+    
+    @IBOutlet
+    private var view: UIView?
+    
     @IBOutlet
     private var titleLabel: UILabel?
     
@@ -20,6 +24,9 @@ class MovieCell: UICollectionViewCell {
     @IBOutlet
     private var imageView: UIImageView?
     
+    @IBOutlet
+    private var darkView: UIView?
+    
     func prepare(movie: Movie?) -> UICollectionViewCell {
         
         self.titleLabel?.text = movie?.title
@@ -27,6 +34,19 @@ class MovieCell: UICollectionViewCell {
         self.yearLabel?.text = String(movie?.releaseYear ?? 0)
         
         self.imageView?.setImage(movie?.images?.first?.url)
+        
+        if let id = movie?.id {
+
+            self.view?.heroID = "\(id)_view"
+            
+            self.darkView?.heroID = "\(id)_darkView"
+
+            self.titleLabel?.heroID = "\(id)_titleLabel"
+
+            self.yearLabel?.heroID = "\(id)_yearLabel"
+
+            self.imageView?.heroID = "\(id)_imageView"
+        }
         
         return self
     }

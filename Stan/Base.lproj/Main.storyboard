@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -20,11 +20,11 @@
             <objects>
                 <viewController storyboardIdentifier="MoviesViewController" id="BYZ-38-t0r" customClass="MoviesViewController" customModule="Stan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JBy-1g-PiR">
-                                <rect key="frame" x="0.0" y="64" width="896" height="350"/>
+                                <rect key="frame" x="0.0" y="172" width="414" height="724"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="0.0" sectionInsetReference="safeArea" id="2sp-Lq-UUH">
                                     <size key="itemSize" width="50" height="50"/>
@@ -39,13 +39,13 @@
                                 </connections>
                             </collectionView>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJH-ld-Fwo">
-                                <rect key="frame" x="448" y="0.0" width="448" height="64"/>
+                                <rect key="frame" x="0.0" y="108" width="414" height="64"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Svc-ZZ-139">
-                                        <rect key="frame" x="0.0" y="10" width="384" height="44"/>
+                                        <rect key="frame" x="20" y="10" width="187" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrD-NQ-XDe">
-                                                <rect key="frame" x="0.0" y="5.5" width="188" height="33"/>
+                                                <rect key="frame" x="0.0" y="5.5" width="89.5" height="33"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="16"/>
                                                 <state key="normal" title="Series">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -66,7 +66,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBB-RK-PN7">
-                                                <rect key="frame" x="196" y="5.5" width="188" height="33"/>
+                                                <rect key="frame" x="97.5" y="5.5" width="89.5" height="33"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="16"/>
                                                 <state key="normal" title="Movies">
                                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -135,10 +135,10 @@
                                 </variation>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMr-QO-yc1">
-                                <rect key="frame" x="0.0" y="0.0" width="448" height="64"/>
+                                <rect key="frame" x="0.0" y="0.0" width="207" height="108"/>
                                 <subviews>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tv5-Jj-cer">
-                                        <rect key="frame" x="44" y="0.0" width="404" height="64"/>
+                                        <rect key="frame" x="0.0" y="44" width="207" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's on Stan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mcd-Hc-pYz">
                                                 <rect key="frame" x="20" y="12.5" width="195.5" height="35.5"/>
@@ -221,5 +221,123 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="0R0-L0-3e5">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailsViewController" id="LYn-kC-AF3" customClass="MovieDetailsViewController" customModule="Stan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nHv-vx-Pxt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="caI-p8-kFO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHe-vi-St5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="2020" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDT-lT-IHL">
+                                        <rect key="frame" x="20" y="248" width="374" height="26.5"/>
+                                        <viewLayoutGuide key="safeArea" id="mhR-Sk-0Ic"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.19889768839999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="-1" height="1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Sydney Sydney Sydney Sydney Sydney Sydney " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0u-LN-shX">
+                                        <rect key="frame" x="20" y="106" width="374" height="134"/>
+                                        <viewLayoutGuide key="safeArea" id="lUL-RC-3sI"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.19889768839999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="-1" height="1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="2020" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OF0-Ar-o10">
+                                        <rect key="frame" x="20" y="299.5" width="374" height="21.5"/>
+                                        <viewLayoutGuide key="safeArea" id="hha-CO-jqM"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.19889768839999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="-1" height="1"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmn-vQ-Ndd">
+                                        <rect key="frame" x="4" y="52" width="41" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="41" id="Dcz-zX-p10"/>
+                                            <constraint firstAttribute="height" constant="44" id="fQy-YZ-cGG"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="icon9x16chevronLeft"/>
+                                        <connections>
+                                            <action selector="backButtonTouchUpInside:" destination="LYn-kC-AF3" eventType="touchUpInside" id="bIZ-F6-mR4"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="2020" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaH-g8-B3M">
+                                        <rect key="frame" x="45" y="52" width="349" height="44"/>
+                                        <viewLayoutGuide key="safeArea" id="kBI-dB-uTu"/>
+                                        <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.19889768839999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="-1" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Jmn-vQ-Ndd" firstAttribute="top" secondItem="ldx-D0-M5O" secondAttribute="top" constant="8" id="3Y1-5G-cWD"/>
+                                    <constraint firstItem="T0u-LN-shX" firstAttribute="top" secondItem="Jmn-vQ-Ndd" secondAttribute="bottom" constant="10" id="5vE-Ok-KVK"/>
+                                    <constraint firstItem="OF0-Ar-o10" firstAttribute="leading" secondItem="ldx-D0-M5O" secondAttribute="leading" constant="20" id="6Fc-OC-T0n"/>
+                                    <constraint firstItem="YaH-g8-B3M" firstAttribute="leading" secondItem="Jmn-vQ-Ndd" secondAttribute="trailing" id="6wz-nt-r7Q"/>
+                                    <constraint firstItem="T0u-LN-shX" firstAttribute="leading" secondItem="ldx-D0-M5O" secondAttribute="leading" constant="20" id="Dk2-Ij-YLx"/>
+                                    <constraint firstItem="YaH-g8-B3M" firstAttribute="top" secondItem="Jmn-vQ-Ndd" secondAttribute="top" id="FNa-1E-baj"/>
+                                    <constraint firstItem="VDT-lT-IHL" firstAttribute="top" secondItem="T0u-LN-shX" secondAttribute="bottom" constant="8" id="IPQ-FH-KLP"/>
+                                    <constraint firstItem="ldx-D0-M5O" firstAttribute="trailing" secondItem="YaH-g8-B3M" secondAttribute="trailing" constant="20" id="NRG-GM-cwJ"/>
+                                    <constraint firstItem="ldx-D0-M5O" firstAttribute="trailing" secondItem="OF0-Ar-o10" secondAttribute="trailing" constant="20" id="UEe-qO-1qo"/>
+                                    <constraint firstItem="OF0-Ar-o10" firstAttribute="top" secondItem="VDT-lT-IHL" secondAttribute="bottom" constant="25" id="Vc7-Nf-hyl"/>
+                                    <constraint firstItem="ldx-D0-M5O" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="OF0-Ar-o10" secondAttribute="bottom" constant="20" id="hTv-cT-zDZ"/>
+                                    <constraint firstItem="ldx-D0-M5O" firstAttribute="trailing" secondItem="T0u-LN-shX" secondAttribute="trailing" constant="20" id="lGB-TC-tfS"/>
+                                    <constraint firstItem="ldx-D0-M5O" firstAttribute="trailing" secondItem="VDT-lT-IHL" secondAttribute="trailing" constant="20" id="uT6-cx-W5f"/>
+                                    <constraint firstItem="VDT-lT-IHL" firstAttribute="leading" secondItem="ldx-D0-M5O" secondAttribute="leading" constant="20" id="xso-90-5sl"/>
+                                    <constraint firstItem="Jmn-vQ-Ndd" firstAttribute="leading" secondItem="ldx-D0-M5O" secondAttribute="leading" constant="4" id="yCQ-5V-l37"/>
+                                    <constraint firstItem="YaH-g8-B3M" firstAttribute="bottom" secondItem="Jmn-vQ-Ndd" secondAttribute="bottom" id="zgd-88-HrL"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="ldx-D0-M5O"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YHe-vi-St5" secondAttribute="trailing" id="4Xy-8Y-axs"/>
+                            <constraint firstAttribute="bottom" secondItem="YHe-vi-St5" secondAttribute="bottom" id="GLg-kU-Eic"/>
+                            <constraint firstItem="caI-p8-kFO" firstAttribute="top" secondItem="nHv-vx-Pxt" secondAttribute="top" id="HqO-ac-Cxs"/>
+                            <constraint firstItem="caI-p8-kFO" firstAttribute="leading" secondItem="nHv-vx-Pxt" secondAttribute="leading" id="Mzi-kH-gwt"/>
+                            <constraint firstAttribute="trailing" secondItem="caI-p8-kFO" secondAttribute="trailing" id="c4u-dX-eRg"/>
+                            <constraint firstItem="YHe-vi-St5" firstAttribute="top" secondItem="nHv-vx-Pxt" secondAttribute="top" id="hYR-Ey-hcL"/>
+                            <constraint firstAttribute="bottom" secondItem="caI-p8-kFO" secondAttribute="bottom" id="rBI-t6-e9N"/>
+                            <constraint firstItem="YHe-vi-St5" firstAttribute="leading" secondItem="nHv-vx-Pxt" secondAttribute="leading" id="y4T-sJ-IQn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kIJ-R4-w4g"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="darkView" destination="YHe-vi-St5" id="i38-3C-KDq"/>
+                        <outlet property="descriptionLabel" destination="OF0-Ar-o10" id="jwp-29-jAC"/>
+                        <outlet property="imageView" destination="caI-p8-kFO" id="5vj-iP-6p5"/>
+                        <outlet property="titleLabel" destination="T0u-LN-shX" id="PdD-yW-XCU"/>
+                        <outlet property="typeLabel" destination="YaH-g8-B3M" id="8cm-WY-y8p"/>
+                        <outlet property="yearLabel" destination="VDT-lT-IHL" id="OBn-8H-P0q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSV-WW-d2j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.97101449275374" y="137.94642857142856"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="icon9x16chevronLeft" width="9" height="16"/>
+        <image name="image.jpg" width="1000" height="1500"/>
+    </resources>
 </document>

@@ -8,6 +8,7 @@ target 'Stan' do
   # Pods for Stan
   pod 'Dwifft', :git => 'https://github.com/jflinter/Dwifft.git', :commit => 'c5a9c62'
   pod 'Kingfisher'
+  pod 'Hero'
 
   target 'StanTests' do
     inherit! :search_paths
