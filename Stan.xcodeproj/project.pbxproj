@@ -38,7 +38,6 @@
 		B5C2F5CA2430564600CBDAFB /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5C2F5C62430564600CBDAFB /* CircularStd-Book.otf */; };
 		B5C2F5D22430569600CBDAFB /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5D02430569600CBDAFB /* MovieCell.swift */; };
 		B5C2F5D32430569600CBDAFB /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5C2F5D12430569600CBDAFB /* MovieCell.xib */; };
-		B5C2F5D52430585200CBDAFB /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5C2F5D42430585200CBDAFB /* image.jpg */; };
 		B5C2F5D924305D3A00CBDAFB /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5D824305D3A00CBDAFB /* UIImageView.swift */; };
 		B5C2F5DC24305DA700CBDAFB /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5DB24305DA600CBDAFB /* MoviesViewController.swift */; };
 		B5C2F5DE24305E7200CBDAFB /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5DD24305E7200CBDAFB /* MoviesViewModel.swift */; };
@@ -121,7 +120,6 @@
 		B5C2F5C62430564600CBDAFB /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
 		B5C2F5D02430569600CBDAFB /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		B5C2F5D12430569600CBDAFB /* MovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
-		B5C2F5D42430585200CBDAFB /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		B5C2F5D824305D3A00CBDAFB /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		B5C2F5DB24305DA600CBDAFB /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		B5C2F5DD24305E7200CBDAFB /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
@@ -298,7 +296,6 @@
 		B5C2F5C22430562900CBDAFB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B5C2F5D42430585200CBDAFB /* image.jpg */,
 				B543AEED242B1DE50099F2CF /* Assets.xcassets */,
 				B5C2F5C42430564600CBDAFB /* CircularStd-Black.otf */,
 				B5C2F5C32430564600CBDAFB /* CircularStd-Bold.otf */,
@@ -476,7 +473,6 @@
 				B5C2F5C82430564600CBDAFB /* CircularStd-Black.otf in Resources */,
 				B5C2F5D32430569600CBDAFB /* MovieCell.xib in Resources */,
 				B5C2F5C92430564600CBDAFB /* CircularStd-Medium.otf in Resources */,
-				B5C2F5D52430585200CBDAFB /* image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -815,7 +811,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaysalvador.Stan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -833,7 +829,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jaysalvador.Stan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
