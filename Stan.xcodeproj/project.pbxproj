@@ -17,6 +17,8 @@
 		B543AF07242B1DE60099F2CF /* StanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543AF06242B1DE60099F2CF /* StanUITests.swift */; };
 		B55CA8222430795200389837 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55CA8212430795200389837 /* MovieDetailsViewController.swift */; };
 		B55CA8242430796800389837 /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55CA8232430796800389837 /* MovieDetailsViewModel.swift */; };
+		B55CA82624309A8800389837 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B55CA82524309A8800389837 /* data.json */; };
+		B55CA82824309A9D00389837 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55CA82724309A9D00389837 /* DataHelper.swift */; };
 		B5C2F5A524303ACA00CBDAFB /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5A424303ACA00CBDAFB /* HttpClient.swift */; };
 		B5C2F5A724303ADA00CBDAFB /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5A624303ADA00CBDAFB /* HttpError.swift */; };
 		B5C2F5AA24303B1B00CBDAFB /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5A924303B1B00CBDAFB /* DispatchQueue.swift */; };
@@ -98,6 +100,8 @@
 		B543AF08242B1DE60099F2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B55CA8212430795200389837 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		B55CA8232430796800389837 /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
+		B55CA82524309A8800389837 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		B55CA82724309A9D00389837 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 		B5C2F59C24303AB500CBDAFB /* libStanLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStanLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C2F5A424303ACA00CBDAFB /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		B5C2F5A624303ADA00CBDAFB /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
@@ -216,7 +220,9 @@
 		B543AEFA242B1DE60099F2CF /* StanTests */ = {
 			isa = PBXGroup;
 			children = (
+				B55CA82524309A8800389837 /* data.json */,
 				B543AEFB242B1DE60099F2CF /* StanTests.swift */,
+				B55CA82724309A9D00389837 /* DataHelper.swift */,
 				B543AEFD242B1DE60099F2CF /* Info.plist */,
 			);
 			path = StanTests;
@@ -478,6 +484,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55CA82624309A8800389837 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +625,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B543AEFC242B1DE60099F2CF /* StanTests.swift in Sources */,
+				B55CA82824309A9D00389837 /* DataHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,29 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>StanTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B543AEE0242B1DE40099F2CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B543AEF6242B1DE60099F2CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B543AF01242B1DE60099F2CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
