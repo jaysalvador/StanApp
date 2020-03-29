@@ -58,6 +58,8 @@ class MovieCell: UICollectionViewCell {
             self.imageView?.hero.modifiers = [.spring(stiffness: 250, damping: 25)]
         }
         
+        self.accessibilityIdentifier = movie?.title?.replacingOccurrences(of: " ", with: "")
+        
         return self
     }
 }
