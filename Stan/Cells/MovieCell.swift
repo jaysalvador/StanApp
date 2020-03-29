@@ -46,6 +46,16 @@ class MovieCell: UICollectionViewCell {
             self.yearLabel?.heroID = "\(id)_yearLabel"
 
             self.imageView?.heroID = "\(id)_imageView"
+            
+            self.view?.hero.modifiers = [.spring(stiffness: 250, damping: 25)]
+            
+            self.darkView?.hero.modifiers = [.spring(stiffness: 250, damping: 25)]
+            
+            self.titleLabel?.hero.modifiers = [.spring(stiffness: 250, damping: 25)]
+            
+            self.yearLabel?.hero.modifiers = [.spring(stiffness: 250, damping: 25)]
+            
+            self.imageView?.hero.modifiers = [.spring(stiffness: 250, damping: 25)]
         }
         
         return self

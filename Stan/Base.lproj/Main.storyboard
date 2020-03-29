@@ -225,7 +225,7 @@
         <scene sceneID="0R0-L0-3e5">
             <objects>
                 <viewController storyboardIdentifier="MovieDetailsViewController" id="LYn-kC-AF3" customClass="MovieDetailsViewController" customModule="Stan" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nHv-vx-Pxt">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="nHv-vx-Pxt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -318,6 +318,11 @@
                             <constraint firstItem="YHe-vi-St5" firstAttribute="leading" secondItem="nHv-vx-Pxt" secondAttribute="leading" id="y4T-sJ-IQn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kIJ-R4-w4g"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
