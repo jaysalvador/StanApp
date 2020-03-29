@@ -107,6 +107,36 @@ class MoviesViewController: JCollectionViewController<MoviesSection, MoviesItem>
         button?.setTitleColor(active ? .systemBlue : .lightGray, for: .normal)
     }
     
+    private func setupDirection() {
+        
+        let orientation = UIDevice.current.orientation
+        
+        if orientation == .landscapeLeft || orientation == .landscapeRight || orientation == .portraitUpsideDown {
+
+            self.collectionView?.flowLayout?.scrollDirection = .horizontal
+            
+            self.collectionView?.alwaysBounceHorizontal = true
+            
+            self.collectionView?.alwaysBounceVertical = false
+            
+            self.collectionView?.showsHorizontalScrollIndicator = true
+            
+            self.collectionView?.showsVerticalScrollIndicator = false
+        }
+        else {
+
+            self.collectionView?.flowLayout?.scrollDirection = .vertical
+            
+            self.collectionView?.alwaysBounceVertical = true
+            
+            self.collectionView?.alwaysBounceHorizontal = false
+            
+            self.collectionView?.showsVerticalScrollIndicator = true
+            
+            self.collectionView?.showsHorizontalScrollIndicator = false
+        }
+    }
+    
     // MARK: - View life cycle
 
     override func viewDidLoad() {
@@ -118,6 +148,8 @@ class MoviesViewController: JCollectionViewController<MoviesSection, MoviesItem>
         self.setupPullToRefresh()
         
         self.setButtons()
+        
+        self.setupDirection()
         
         self.viewModel?.getMovies()
     }
@@ -147,7 +179,7 @@ class MoviesViewController: JCollectionViewController<MoviesSection, MoviesItem>
         
         let orientation = UIDevice.current.orientation
         
-        if orientation == .landscapeLeft || orientation == .landscapeRight {
+        if orientation == .landscapeLeft || orientation == .landscapeRight || orientation == .portraitUpsideDown {
             
             return CGSize(width: 320.0, height: collectionView.frame.height)
         }
@@ -169,16 +201,7 @@ class MoviesViewController: JCollectionViewController<MoviesSection, MoviesItem>
     
     override func orientationChanged() {
         
-        let orientation = UIDevice.current.orientation
-        
-        if orientation == .landscapeLeft || orientation == .landscapeRight {
-
-            self.collectionView?.flowLayout?.scrollDirection = .horizontal
-        }
-        else {
-
-            self.collectionView?.flowLayout?.scrollDirection = .vertical
-        }
+        self.setupDirection()
         
         super.orientationChanged()
     }
