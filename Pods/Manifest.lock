@@ -1,8 +1,16 @@
 PODS:
   - Dwifft (0.9)
+  - Kingfisher (5.13.2):
+    - Kingfisher/Core (= 5.13.2)
+  - Kingfisher/Core (5.13.2)
 
 DEPENDENCIES:
   - Dwifft (from `https://github.com/jflinter/Dwifft.git`, commit `c5a9c62`)
+  - Kingfisher
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
 
 EXTERNAL SOURCES:
   Dwifft:
@@ -16,7 +24,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Dwifft: 00dcec0f3c38cfb9c1331509851e81c84fc3949e
+  Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
 
-PODFILE CHECKSUM: bafb5c6f50d736660309179e2796d7c6c544491c
+PODFILE CHECKSUM: 49ec64a57edf081947002d6b38e2c55c8dae2ff8
 
 COCOAPODS: 1.8.3

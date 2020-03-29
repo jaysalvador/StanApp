@@ -36,5 +36,165 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98796E82-F8C5-4657-9BF0-449A1203BE75"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stan/ViewControllers/MoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "getMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63F33624-4525-4000-BE96-A31D9CA7CC8B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stan/ViewControllers/MoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "getMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC661BC0-1B39-4522-A64F-EF4B1C79561B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stan/ViewControllers/MoviesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "onRefresh()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "119816EA-148A-4BB1-96F7-D95F4B18DA52"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stan/ViewControllers/MoviesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD748D07-126E-4CFC-A533-4D7ED77BDC89"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stan/ViewControllers/MoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "MoviesViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "FD748D07-126E-4CFC-A533-4D7ED77BDC89 - 7be7d9806f0cbde8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Stan.MoviesViewModel.getMovies() -&gt; ()"
+                  moduleName = "Stan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaysalvador/Stan/Stan/ViewControllers/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "55">
+               </Location>
+               <Location
+                  uuid = "FD748D07-126E-4CFC-A533-4D7ED77BDC89 - fde536dbe4817837"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;StanLib.MovieClient.MoviesResponse, StanLib.HttpError&gt;) -&gt; () in Stan.MoviesViewModel.getMovies() -&gt; ()"
+                  moduleName = "Stan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaysalvador/Stan/Stan/ViewControllers/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "107">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8490C3B-8CD3-4009-8E58-11C4B88C9CFA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Stan/ViewControllers/MoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "getMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E8490C3B-8CD3-4009-8E58-11C4B88C9CFA - fde536dbe4817837"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;StanLib.MovieClient.MoviesResponse, StanLib.HttpError&gt;) -&gt; () in Stan.MoviesViewModel.getMovies() -&gt; ()"
+                  moduleName = "Stan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaysalvador/Stan/Stan/ViewControllers/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "115">
+               </Location>
+               <Location
+                  uuid = "E8490C3B-8CD3-4009-8E58-11C4B88C9CFA - fde536dbe4817837"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;StanLib.MovieClient.MoviesResponse, StanLib.HttpError&gt;) -&gt; () in Stan.MoviesViewModel.getMovies() -&gt; ()"
+                  moduleName = "Stan"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaysalvador/Stan/Stan/ViewControllers/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "151">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

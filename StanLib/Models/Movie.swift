@@ -72,3 +72,15 @@ public struct Movie: Codable {
         }
     }
 }
+
+extension Movie: Equatable {
+    
+    // add equatable to compare Movie objects
+    
+    public static func == (lhs: Movie, rhs: Movie) -> Bool {
+        
+        return lhs.title == rhs.title &&
+            lhs.releaseYear == rhs.releaseYear &&
+            lhs.programType == rhs.programType
+    }
+}
