@@ -1,0 +1,6 @@
+framework module Pods_StanTests {
+  umbrella header "Pods-StanTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

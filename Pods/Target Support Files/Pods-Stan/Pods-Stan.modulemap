@@ -1,0 +1,6 @@
+framework module Pods_Stan {
+  umbrella header "Pods-Stan-umbrella.h"
+
+  export *
+  module * { export * }
+}
