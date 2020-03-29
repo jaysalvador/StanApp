@@ -137,13 +137,13 @@
                                 </variation>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMr-QO-yc1">
-                                <rect key="frame" x="0.0" y="0.0" width="207" height="108"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                                 <subviews>
                                     <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tv5-Jj-cer">
-                                        <rect key="frame" x="0.0" y="44" width="207" height="64"/>
+                                        <rect key="frame" x="0.0" y="44" width="414" height="64"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's on Stan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mcd-Hc-pYz">
-                                                <rect key="frame" x="20" y="12.5" width="195.5" height="35.5"/>
+                                                <rect key="frame" x="20" y="14.5" width="394" height="35.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="28"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -152,9 +152,10 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="Mcd-Hc-pYz" firstAttribute="centerY" secondItem="tv5-Jj-cer" secondAttribute="centerY" id="51n-gv-VnE"/>
                                             <constraint firstItem="Mcd-Hc-pYz" firstAttribute="leading" secondItem="tv5-Jj-cer" secondAttribute="leading" constant="20" id="TVm-wH-wg2"/>
-                                            <constraint firstAttribute="bottom" secondItem="Mcd-Hc-pYz" secondAttribute="bottom" constant="16" id="dOz-1o-FRC"/>
                                             <constraint firstAttribute="height" constant="64" id="klO-rx-2gH"/>
+                                            <constraint firstAttribute="trailing" secondItem="Mcd-Hc-pYz" secondAttribute="trailing" id="pYP-e3-UAj"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -186,6 +187,7 @@
                         <constraints>
                             <constraint firstItem="JBy-1g-PiR" firstAttribute="top" secondItem="JJH-ld-Fwo" secondAttribute="bottom" id="1ai-DU-R46"/>
                             <constraint firstAttribute="trailing" secondItem="JBy-1g-PiR" secondAttribute="trailing" id="6fY-9P-frN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fMr-QO-yc1" secondAttribute="trailing" id="Bwd-MT-TBH"/>
                             <constraint firstAttribute="bottom" secondItem="JBy-1g-PiR" secondAttribute="bottom" id="FMQ-4u-8lC"/>
                             <constraint firstItem="JJH-ld-Fwo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OTS-CY-rQw"/>
                             <constraint firstItem="JJH-ld-Fwo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QLV-En-NIh"/>
@@ -200,12 +202,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Yku-kT-kqt"/>
                                 <exclude reference="QLV-En-NIh"/>
                                 <exclude reference="itM-y6-UfG"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
+                                <include reference="Yku-kT-kqt"/>
+                                <exclude reference="Bwd-MT-TBH"/>
                                 <exclude reference="OTS-CY-rQw"/>
                                 <include reference="QLV-En-NIh"/>
                                 <include reference="itM-y6-UfG"/>
