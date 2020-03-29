@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,15 @@
 		B543AEF1242B1DE50099F2CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B543AEEF242B1DE50099F2CF /* LaunchScreen.storyboard */; };
 		B543AEFC242B1DE60099F2CF /* StanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543AEFB242B1DE60099F2CF /* StanTests.swift */; };
 		B543AF07242B1DE60099F2CF /* StanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B543AF06242B1DE60099F2CF /* StanUITests.swift */; };
+		B5C2F5A524303ACA00CBDAFB /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5A424303ACA00CBDAFB /* HttpClient.swift */; };
+		B5C2F5A724303ADA00CBDAFB /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5A624303ADA00CBDAFB /* HttpError.swift */; };
+		B5C2F5AA24303B1B00CBDAFB /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5A924303B1B00CBDAFB /* DispatchQueue.swift */; };
+		B5C2F5AC24303B4C00CBDAFB /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5AB24303B4C00CBDAFB /* URLSession.swift */; };
+		B5C2F5AF24303BEE00CBDAFB /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5AE24303BEE00CBDAFB /* Image.swift */; };
+		B5C2F5B124303C6100CBDAFB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5B024303C6100CBDAFB /* Movie.swift */; };
+		B5C2F5B324303D5100CBDAFB /* MovieClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5B224303D5100CBDAFB /* MovieClient.swift */; };
+		B5C2F5B524303DE600CBDAFB /* MovieClient.MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2F5B424303DE500CBDAFB /* MovieClient.MoviesResponse.swift */; };
+		B5C2F5B7243041F100CBDAFB /* libStanLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C2F59C24303AB500CBDAFB /* libStanLib.a */; };
 		C59792F0AEDAEF450D0FE0B5 /* Pods_StanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E46D32A2CB26982227D3B68 /* Pods_StanTests.framework */; };
 		EFB2CC01A4952763D9DC4891 /* Pods_Stan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A9A076BC150C064DF7BD29 /* Pods_Stan.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +45,18 @@
 			remoteInfo = Stan;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5C2F59A24303AB500CBDAFB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01F8C6984C9634A19A800E88 /* Pods-Stan-StanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stan-StanUITests.release.xcconfig"; path = "Target Support Files/Pods-Stan-StanUITests/Pods-Stan-StanUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +82,15 @@
 		B543AF02242B1DE60099F2CF /* StanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B543AF06242B1DE60099F2CF /* StanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StanUITests.swift; sourceTree = "<group>"; };
 		B543AF08242B1DE60099F2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5C2F59C24303AB500CBDAFB /* libStanLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStanLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C2F5A424303ACA00CBDAFB /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		B5C2F5A624303ADA00CBDAFB /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		B5C2F5A924303B1B00CBDAFB /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		B5C2F5AB24303B4C00CBDAFB /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		B5C2F5AE24303BEE00CBDAFB /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		B5C2F5B024303C6100CBDAFB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		B5C2F5B224303D5100CBDAFB /* MovieClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieClient.swift; sourceTree = "<group>"; };
+		B5C2F5B424303DE500CBDAFB /* MovieClient.MoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieClient.MoviesResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFB2CC01A4952763D9DC4891 /* Pods_Stan.framework in Frameworks */,
+				B5C2F5B7243041F100CBDAFB /* libStanLib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +119,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5C2F59924303AB500CBDAFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -101,13 +139,13 @@
 				0CEDE990956B593288C4A392 /* Pods-StanTests.debug.xcconfig */,
 				122E7E13F7EA466285501FAA /* Pods-StanTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		B543AED8242B1DE40099F2CF = {
 			isa = PBXGroup;
 			children = (
+				B5C2F59D24303AB500CBDAFB /* StanLib */,
 				B543AEE3242B1DE40099F2CF /* Stan */,
 				B543AEFA242B1DE60099F2CF /* StanTests */,
 				B543AF05242B1DE60099F2CF /* StanUITests */,
@@ -123,6 +161,7 @@
 				B543AEE1242B1DE40099F2CF /* Stan.app */,
 				B543AEF7242B1DE60099F2CF /* StanTests.xctest */,
 				B543AF02242B1DE60099F2CF /* StanUITests.xctest */,
+				B5C2F59C24303AB500CBDAFB /* libStanLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,6 +196,45 @@
 				B543AF08242B1DE60099F2CF /* Info.plist */,
 			);
 			path = StanUITests;
+			sourceTree = "<group>";
+		};
+		B5C2F59D24303AB500CBDAFB /* StanLib */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2F5A324303AC000CBDAFB /* API */,
+				B5C2F5A824303AE800CBDAFB /* Extensions */,
+				B5C2F5AD24303BC700CBDAFB /* Models */,
+			);
+			path = StanLib;
+			sourceTree = "<group>";
+		};
+		B5C2F5A324303AC000CBDAFB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2F5A424303ACA00CBDAFB /* HttpClient.swift */,
+				B5C2F5A624303ADA00CBDAFB /* HttpError.swift */,
+				B5C2F5B224303D5100CBDAFB /* MovieClient.swift */,
+				B5C2F5B424303DE500CBDAFB /* MovieClient.MoviesResponse.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B5C2F5A824303AE800CBDAFB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2F5A924303B1B00CBDAFB /* DispatchQueue.swift */,
+				B5C2F5AB24303B4C00CBDAFB /* URLSession.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5C2F5AD24303BC700CBDAFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2F5AE24303BEE00CBDAFB /* Image.swift */,
+				B5C2F5B024303C6100CBDAFB /* Movie.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BE2B2B897C13BB746C46E32F /* Frameworks */ = {
@@ -230,6 +308,23 @@
 			productReference = B543AF02242B1DE60099F2CF /* StanUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B5C2F59B24303AB500CBDAFB /* StanLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5C2F5A224303AB500CBDAFB /* Build configuration list for PBXNativeTarget "StanLib" */;
+			buildPhases = (
+				B5C2F59824303AB500CBDAFB /* Sources */,
+				B5C2F59924303AB500CBDAFB /* Frameworks */,
+				B5C2F59A24303AB500CBDAFB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StanLib;
+			productName = StanLib;
+			productReference = B5C2F59C24303AB500CBDAFB /* libStanLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -251,6 +346,9 @@
 						CreatedOnToolsVersion = 11.1;
 						TestTargetID = B543AEE0242B1DE40099F2CF;
 					};
+					B5C2F59B24303AB500CBDAFB = {
+						CreatedOnToolsVersion = 11.1;
+					};
 				};
 			};
 			buildConfigurationList = B543AEDC242B1DE40099F2CF /* Build configuration list for PBXProject "Stan" */;
@@ -269,6 +367,7 @@
 				B543AEE0242B1DE40099F2CF /* Stan */,
 				B543AEF6242B1DE60099F2CF /* StanTests */,
 				B543AF01242B1DE60099F2CF /* StanUITests */,
+				B5C2F59B24303AB500CBDAFB /* StanLib */,
 			);
 		};
 /* End PBXProject section */
@@ -427,6 +526,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B543AF07242B1DE60099F2CF /* StanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C2F59824303AB500CBDAFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C2F5A524303ACA00CBDAFB /* HttpClient.swift in Sources */,
+				B5C2F5A724303ADA00CBDAFB /* HttpError.swift in Sources */,
+				B5C2F5B124303C6100CBDAFB /* Movie.swift in Sources */,
+				B5C2F5B324303D5100CBDAFB /* MovieClient.swift in Sources */,
+				B5C2F5B524303DE600CBDAFB /* MovieClient.MoviesResponse.swift in Sources */,
+				B5C2F5AC24303B4C00CBDAFB /* URLSession.swift in Sources */,
+				B5C2F5AA24303B1B00CBDAFB /* DispatchQueue.swift in Sources */,
+				B5C2F5AF24303BEE00CBDAFB /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +813,30 @@
 			};
 			name = Release;
 		};
+		B5C2F5A024303AB500CBDAFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5C2F5A124303AB500CBDAFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -734,6 +872,15 @@
 			buildConfigurations = (
 				B543AF12242B1DE60099F2CF /* Debug */,
 				B543AF13242B1DE60099F2CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5C2F5A224303AB500CBDAFB /* Build configuration list for PBXNativeTarget "StanLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5C2F5A024303AB500CBDAFB /* Debug */,
+				B5C2F5A124303AB500CBDAFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
